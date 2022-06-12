@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XCTQuickTour.BaseQuickTourPage"
+    xmlns:toolkit="http://xamarin.com/schemas/2020/toolkit"
+    BackgroundColor="#D6072F40"
+    Color="Transparent">
+    
+    <toolkit:Popup.Content>
+        <StackLayout Padding="0,0,0,15">
+            <ContentView VerticalOptions="FillAndExpand"
+                         x:Name="body"/>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="End"
+                         Padding="20"
+                         Grid.Row="1">
+                <Button Text="Skip"
+                        x:Name="skipbtn"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                VerticalOptions="End"
+                                Command="{Binding SkipCommand}"
+                        Clicked="SkipButtonClicked"/>
+
+                <Label x:Name="stepslbl"
+                                 HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                                 TextColor="White">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding ActualStep}" x:Name="actual"/>
+                            <Span Text="/" />
+                            <Span Text="{Binding TotalSteps}" x:Name="total"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Button Text="{TemplateBinding NextButtonText}"
+                        x:Name="nextbtn"
+                                  BackgroundColor="White"
+                                  FontAttributes="Bold"
+                                  TextColor="Black"
+                                  Command="{TemplateBinding NextCommand}"
+                                  CommandParameter="{TemplateBinding NextPage}"
+                        Clicked="NextButtonClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </toolkit:Popup.Content>
+</toolkit:Popup>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:BaseQuickTourPage
+    xmlns:local="clr-namespace:XCTQuickTour"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XCTQuickTour.QuickTourStep1PopUp" 
+    NextButtonText="Next">
+
+    <local:BaseQuickTourPage.BodyContent>
+        <ContentView>
+            <Frame VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="40,0">
+                <Label Text="This tutorial is build with ♥ to learn the new things in Xamarin Community Toolkit"
+                       FontAttributes="Bold"
+                       FontSize="Subtitle"
+                       Padding="15,0"/>
+            </Frame>
+        </ContentView>
+    </local:BaseQuickTourPage.BodyContent>
+</local:BaseQuickTourPage>

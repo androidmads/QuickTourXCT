@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:BaseQuickTourPage
+    xmlns:local="clr-namespace:XCTQuickTour"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XCTQuickTour.QuickTourStep2PopUp" 
+    NextButtonText="Next">
+    <local:BaseQuickTourPage.BodyContent>
+        <ContentView>
+            <StackLayout VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand">
+                <Button Text="ADD" 
+                        BackgroundColor="Transparent" 
+                        BorderColor="White"
+                        BorderWidth="2"
+                        CornerRadius="10"
+                        TextColor="White"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"/>
+                <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center">
+                    <Label Text="Click and Hold the ADD button will display the toolbar item name"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"
+                       FontSize="Title"/>
+                </StackLayout>
+            </StackLayout>
+        </ContentView>
+    </local:BaseQuickTourPage.BodyContent>
+</local:BaseQuickTourPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:BaseQuickTourPage
+    xmlns:local="clr-namespace:XCTQuickTour"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XCTQuickTour.QuickTourStep3PopUp"
+    NextButtonText="DONE">
+    <local:BaseQuickTourPage.BodyContent>
+        <ContentView>
+            <StackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center">
+                <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center">
+                    <Label Text="Click SHOW button to start the Quick Tour Demo"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                       FontSize="Title"/>
+                <Button Text="SHOW" 
+                        BackgroundColor="Transparent" 
+                        BorderColor="White"
+                        BorderWidth="2"
+                        CornerRadius="10"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"/>
+                </StackLayout>
+                <Label Text="You are all set! Welcome."
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                       FontSize="Title"
+                           TextColor="White"
+                           Padding="15,0"/>
+            </StackLayout>
+        </ContentView>
+    </local:BaseQuickTourPage.BodyContent>
+</local:BaseQuickTourPage>
